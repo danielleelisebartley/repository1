@@ -1,0 +1,478 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Danielle_Index</title>
+    <link rel="stylesheet" href="jquery-ui.min.css">
+    <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
+    <script src="external/jquery/jquery.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="jquery-ui.min.css">
+	<script src="jquery-ui.min.js"></script>
+    
+     <style>
+    body {
+        background-image: url("dan_sunset.png");
+              background-position: center;
+              background-repeat: repeat;
+              background-size: cover;
+            background-color: #f2f0e9;
+            overflow: auto;
+            margin-top: 0px;
+            margin-left: -10px;
+            
+        }
+         
+         
+          #main {
+            z-index: 15;
+            width: auto;
+            height: 750px;
+            background-color: #f9f5b5;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+            opacity: 90%;
+            padding: 10px;
+            margin-top: 0px;
+            overflow: hidden;
+            display: block;
+        }
+        
+		nav {
+            position: fixed;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+    font-weight: normal;
+    font-style: normal;
+	top: 20px;
+	margin-left: 0px;
+	margin-right: -7px;
+	height: 45px;
+	z-index: 10;
+	width: 100%;
+            overflow: hidden;
+		}
+		
+		.h1 {
+            position: ;
+	margin-top: 0px;
+	margin-left: 10px;
+		}
+         
+          #fpheaderlogo {
+            position: fixed;
+            margin-top: 20px;
+            display: block;
+          margin-left: 30px;
+        }
+         
+         #abouttext {
+            position: relative;
+            color: rgba(103,103,102,1.00);
+            margin-top: 10px;
+            float: right;
+             margin-right: 10px;
+        }
+         
+         #nartext {
+            position: relative;
+            color: rgba(103,103,102,1.00);
+            margin-top: 10px;
+            float: right;
+             margin-right: 10px;
+        }
+        
+        #commtext {
+            position: relative;
+            color: rgba(103,103,102,1.00);
+            margin-top: 10px;
+            float: right;
+            margin-right: 10px;
+        }
+        
+        #contacttext {
+            position: relative;
+            color: rgba(103,103,102,1.00);
+            margin-top: 10px;
+            float: right;
+            margin-right: 75px;
+        }
+
+         .reel {
+             z-index: 100;
+               margin-top: 0px;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+             width: 90%;
+            display: none;
+            
+         }
+         
+         #narreel {
+             z-index: 100;
+              display: block;
+            display: none;
+            margin: auto;
+              padding: 25px;
+              width: 100%;
+         }
+         
+         #narvid {
+             margin-top: 180px;
+             display: block;
+              margin-left: auto;
+              margin-right: auto;
+             width: 90%;
+         }
+         
+         #commreel {
+             z-index: 100;
+              display: block;
+            display: none;
+            margin: auto;
+              padding: 25px;
+              width: 100%;
+         }
+         
+         #commvid {
+             margin-top: 180px;
+             display: block;
+              margin-left: auto;
+              margin-right: auto;
+             width: 90%;
+         }
+         
+         
+         #insta {
+             position: fixed;
+             bottom: 20px;
+              margin-left: 25px;
+             opacity: 90%;
+             
+         }
+         
+          #clickstuff {
+               margin-top: 180px;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+             width: 510px;
+              height: 510px;
+              opacity: 90%;
+            
+         }
+         
+         .about {
+             margin-top: 5px;
+             width: 250px;
+             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+             
+         }
+         
+         .about .img-top {
+        display: none;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .about:hover .img-top {
+        display: inline;
+    }
+         
+         .about:hover .img-bot {
+        display: none;
+    }
+         
+          .commercial {
+              float: left;
+              width: 250px;
+              height: 250px;
+             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+             
+         }
+         
+         
+         .commercial .img-top {
+        display: none;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .commercial:hover .img-top {
+        display: inline;
+    }
+          .commercial:hover .img-bot {
+        display: none;
+    }
+         
+          .narrative {
+              margin-left: 10px;
+              float: left;
+              width: 250px;
+             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+             
+         }
+         
+         .narrative .img-top {
+        display: none;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .narrative:hover .img-top {
+        display: inline;
+    }
+         .narrative:hover .img-bot {
+        display: none;
+    }
+         
+         .contact {
+             float: right;
+             margin-top: -243px;
+              width: 250px;
+             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+             
+         }
+         
+         .contact .img-top {
+        display: none;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .contact:hover .img-top {
+        display: inline;
+    }
+          .contact:hover .img-bot {
+        display: none;
+    }
+      
+         .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+.about-modal-content {
+  background-color: #f2f0e9;
+    border: 1px solid #888;
+  margin: auto;
+    margin-top: 180px;
+  padding: 25px;
+  width: 50%;
+}
+
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+         
+         a {
+             cursor: pointer;
+         }
+         
+        
+         
+          </style>
+</head>
+
+<body>
+    
+    <nav>
+        <div class="h1">
+            <a id="contacttext" href="mailto:danielleelisebartley@gmail.com">contact</a>
+            <a id="commtext" onClick="commreelFunction()">commercial</a>
+            <a id="nartext" onclick="narreelFunction()">narrative</a>
+            <a id="abouttext">about</a>
+        </div></nav>
+   
+    <div id="fpheaderlogo"><img src="danlogoAsset 14.png" height="150px" alt="freshproduce"> </div>
+    <div id="insta"><a href="https://www.instagram.com/danielleelisebartley/" target="_blank"><img src="dangramAsset 11.png" height="35" alt="instagram"></a> </div>
+    
+     <div id="clickstuff">
+         
+         <div class="commercial" id="commercial" onClick="commreelFunction()">
+             <img class="img-top" src="comercialoverlayAsset 24.png" height="250" alt="commercial">
+         <img class="img-bot" src="commercialphotoAsset 16.png" height="250" alt="commercial">
+         </div>
+         
+         <div class="narrative" id="narrative" onclick="narreelFunction()">
+             <img class="img-top" src="narrativeoverlayAsset 25.png" height="250" alt="narrative">
+             <img class="img-bot" src="narrativephotoAsset 17.png" height="250" alt="narrative"></div>
+         
+    <div class="about" id="about">
+        <img class="img-top" src="aboutoverlayAsset 26.png" height="250" alt="about">
+        <img class="img-bot" src="aboutphotoAsset 18.png" height="250" alt="about"></div>
+         
+        <a href="mailto:danielleelisebartley@gmail.com"><div class="contact" id="contact" >
+              <img class="img-top" src="contactoverlayAsset 27.png" height="250" alt="contact">
+             <img class="img-bot" src="contactphotoAsset 19.png" height="250" alt="contact"></div></a> </div>
+    
+
+
+
+<div id="aboutModal" class="modal">
+
+  <div class="about-modal-content">
+    <span class="close" onclick="aboutcloseFunction()">&times;</span>
+    <img src="danaboutAsset 15.png" height="175" alt="abouttext">
+  </div>
+
+</div>
+    
+    
+    <div id="narreel" class="modal">
+        
+  <div>
+    <span class="close" onclick="narreelFunction()">&times;</span>
+      <iframe id="narvid" src="https://player.vimeo.com/video/289381216?h=2acbfa920c" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+    
+     <div id="commreel" class="modal">
+    <span class="close" onClick="commreelFunction()">&times;</span>
+    <iframe id="commvid" src="https://player.vimeo.com/video/592945941?h=cb48c057d7" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+     </div>
+    
+    
+</body>
+   
+    <script>
+        $(".button").on("click", function() {
+  var modal = $(this).data("modal");
+  $(modal).show();
+});
+
+$(".modal").on("click", function(e) {
+  var className = e.target.className;
+  if(className === "modal" || className === "close"){
+    $(this).closest(".modal").hide();
+  }
+});
+    </script>
+     
+    <script>
+var modal = document.getElementById("aboutModal");
+var btn = document.getElementById("abouttext");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+    
+    <script>
+var modal = document.getElementById("aboutModal");
+var btn = document.getElementById("about");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+    
+    <script>
+	function aboutcloseFunction() {
+  var x = document.getElementById("aboutModal").style;
+  if (x.display === "none"|| x.display == '') {
+    x.display = "block";
+  } else {
+    x.display = "none";
+  }
+}
+</script>
+    
+<script>const btns = document.querySelectorAll("[data-target]");
+const close_modals = document.querySelectorAll(".close-modal");
+const overlay = document.getElementById("overlay");
+
+btns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    document.querySelector(btn.dataset.target).classList.add("active");
+    overlay.classList.add("active");
+  });
+});
+
+close_modals.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const modal = btn.closest(".modal");
+    modal.classList.remove("active");
+    overlay.classList.remove("active");
+  });
+});
+
+window.onclick = (event) => {
+  if (event.target == overlay) {
+    const modals = document.querySelectorAll(".modal");
+    modals.forEach((modal) => modal.classList.remove("active"));
+    overlay.classList.remove("active");
+  }
+};</script>
+    
+    <script>
+	function commreelFunction() {
+  var x = document.getElementById("commreel").style;
+  if (x.display === "none"|| x.display == '') {
+    x.display = "block";
+  } else {
+    x.display = "none";
+  }
+}
+</script>
+    
+     <script>
+	function narreelFunction() {
+  var x = document.getElementById("narreel").style;
+  if (x.display === "none"|| x.display == '') {
+    x.display = "block";
+  } else {
+    x.display = "none";
+  }
+}
+</script>
+    
+    
+    
+</html>
